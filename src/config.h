@@ -135,13 +135,13 @@ IPAddress dns2 = IPAddress(8, 8, 4, 4);
 #define USER_PASSWORD "12345678"
 #define DATABASE_URL "cartel-cabezas-2022-default-rtdb.firebaseio.com" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 #define DATABASE_SECRET "DATABASE_SECRET"
-boolean f_grabar_firebase = false;     // Bandera grabar
+boolean f_grabar_firebase = false; // Bandera grabar
 boolean f_leer_actual_fire = true; // Bandera leer actualizacion
-uint32_t actualizacion_FB = 0;          // actualizacion en BD
-uint32_t actualizacion = 0;          // Actualizacion en hardware
-String path = "/Numeros/";       // path de BD
-#define VERIF_BD 150000           // tiempo verificacion actualizacion BD
-uint8_t error_firebase=1;        //contador de errores en coneccion
+uint32_t actualizacion_FB = 0;     // actualizacion en BD
+uint32_t actualizacion = 0;        // Actualizacion en hardware
+String path = "/Numeros/";         // path de BD
+#define VERIF_BD 150000            // tiempo verificacion actualizacion BD
+uint8_t error_firebase = 1;        // contador de errores en coneccion
 
 ///////////////////////////////////////////////////////////////////
 //// Estructuras y datos
