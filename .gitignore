@@ -1,6 +1,7 @@
 
-src\config_local.h
-
+src/config_local.h
+.vscode/*
+.pio/*
 
 # Built application files
 *.apk
