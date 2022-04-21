@@ -1,4 +1,6 @@
-/src/config_local.h
+
+src\config_local.h
+
 
 # Built application files
 *.apk
