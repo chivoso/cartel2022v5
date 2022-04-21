@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.ino": "cpp",
+        "*.cps": "javascript",
+        "cstddef": "cpp",
+        "limits": "cpp",
+        "regex": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "ranges": "cpp"
+    }
+}

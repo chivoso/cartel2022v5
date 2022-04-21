@@ -1,0 +1,25 @@
+<input id="jug1hoy" name="jug1hoy" type="checkbox" %JUG1HOY%>
+<input type="hidden" name="jh1" value="false" id="jh1">
+
+
+
+String proceConf(const String &var)
+else if (var == "JUG1HOY")
+  {
+    return selectJug(5);
+
+
+
+
+void cargaDatosConf(String dato, String valor)
+    else if (dato == "jh1")
+  {
+    if (valor == "true")
+    {
+      mostJug[4] = 1;
+    }
+    else
+      mostJug[4] = 0;
+
+
+<form name="Numeros" action="/configurar.html" method="POST" autocomplete="off" target="_self" onsubmit="return validar()">

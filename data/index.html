@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<script type='text/javascript'>
+    function validar() {
+        if (document.getElementById("ch_prev").checked) {
+            document.getElementById("hch_prev").value = true;
+        }
+        if (document.getElementById("ch_prim").checked) {
+            document.getElementById("hch_prim").value = true;
+        }
+        if (document.getElementById("ch_matu").checked) {
+            document.getElementById("hch_matu").value = true;
+        }
+        if (document.getElementById("ch_vesp").checked) {
+            document.getElementById("hch_vesp").value = true;
+        }
+        if (document.getElementById("ch_noct").checked) {
+            document.getElementById("hch_noct").value = true;
+        }
+        return true;
+    }
+</script>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Cartel 2022</title>
+</head>
+
+<body>
+    <form name="Numeros" action="/" method="POST" autocomplete="off" target="_self" onsubmit="return validar()">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan="2">
+                    <img src="grillo.png" alt="Logo del Grillo" height="40" width="193">
+                </td>
+            </tr>
+            <tbody>
+                <tr>
+                    <!-- PREVIA -->
+                    <td colspan="4">
+                        <table cellspacing="0" cellpadding="0" style="border-width: 1px; border-style: dashed;
+                        border-color: black; background:rgb(129, 243, 144)">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <b>La Previa </b><input id="ch_prev" name="ch_prev" title="Marque para mostrar."
+                                            type="checkbox" %CH_PREV%>
+                                        <input type="hidden" name="hch_prev" value="false" id="hch_prev">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Provincia
+                                    </td>
+                                    <td><input style="color:yellow" name="num1" value="%NUM1%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ciudad
+                                    </td>
+                                    <td><input style="color:yellow" name="num2" value="%NUM2%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Córdoba
+                                    </td>
+                                    <td><input style="color:skyblue" name="num3" value="%NUM3%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Santa Fé
+                                    </td>
+                                    <td><input style="color:skyblue" name="num4" value="%NUM4%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Entre Ríos
+                                    </td>
+                                    <td><input style="color:green" name="num5" value="%NUM5%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Montevideo
+                                    </td>
+                                    <td><input style="color:green" name="num6" value="%NUM6%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <!-- PRIMERA -->
+                    <td>
+                        <table cellspacing="0" cellpadding="0" style="border-width: 1px; border-style: dashed;
+                        border-color: black; background:rgb(99, 250, 250)">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <b>Primera </b><input id="ch_prim" name="ch_prim" title="Marque para mostrar."
+                                            type="checkbox" %CH_PRIM%>
+                                        <input type="hidden" name="hch_prim" value="false" id="hch_prim">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Provincia
+                                    </td>
+                                    <td><input style="color:yellow" name="num7" value="%NUM7%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ciudad
+                                    </td>
+                                    <td><input style="color:yellow" name="num8" value="%NUM8%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Córdoba
+                                    </td>
+                                    <td><input style="color:skyblue" name="num9" value="%NUM9%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Santa Fé
+                                    </td>
+                                    <td><input style="color:skyblue" name="num10" value="%NUM10%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Entre Ríos
+                                    </td>
+                                    <td><input style="color:green" name="num11" value="%NUM11%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Montevideo
+                                    </td>
+                                    <td><input style="color:green" name="num12" value="%NUM12%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <!-- Matutina -->
+                    <td>
+                        <table cellspacing="0" cellpadding="0" style="border-width: 1px; border-style: dashed;
+                        border-color: black; background:rgb(248, 248, 122)">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <b>Matutina </b><input id="ch_matu" name="ch_matu" title="Marque para mostrar."
+                                            type="checkbox" %CH_MATU%>
+                                        <input type="hidden" name="hch_matu" value="false" id="hch_matu">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Provincia
+                                    </td>
+                                    <td><input style="color:yellow" name="num13" value="%NUM13%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ciudad
+                                    </td>
+                                    <td><input style="color:yellow" name="num14" value="%NUM14%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Córdoba
+                                    </td>
+                                    <td><input style="color:skyblue" name="num15" value="%NUM15%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Santa Fé
+                                    </td>
+                                    <td><input style="color:skyblue" name="num16" value="%NUM16%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Entre Ríos
+                                    </td>
+                                    <td><input style="color:green" name="num17" value="%NUM17%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Montevideo
+                                    </td>
+                                    <td><input style="color:green" name="num18" value="%NUM18%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Vespertina -->
+                    <td>
+                        <table cellspacing="0" cellpadding="0" style="border-width: 1px; border-style: dashed;
+                        border-color: black; background:rgb(250, 147, 245)">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <b>Vespertina </b><input id="ch_vesp" name="ch_vesp"
+                                            title="Marque para mostrar." type="checkbox" %CH_VESP%>
+                                        <input type="hidden" name="hch_vesp" value="false" id="hch_vesp">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Provincia
+                                    </td>
+                                    <td><input style="color:yellow" name="num19" value="%NUM19%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ciudad
+                                    </td>
+                                    <td><input style="color:yellow" name="num20" value="%NUM20%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Córdoba
+                                    </td>
+                                    <td><input style="color:skyblue" name="num21" value="%NUM21%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Santa Fé
+                                    </td>
+                                    <td><input style="color:skyblue" name="num22" value="%NUM22%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Entre Ríos
+                                    </td>
+                                    <td><input style="color:green" name="num23" value="%NUM23%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Montevideo
+                                    </td>
+                                    <td><input style="color:green" name="num24" value="%NUM24%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <!-- Nocturna -->
+                    <td>
+                        <table cellspacing="0" cellpadding="0" style="border-width: 1px; border-style: dashed;
+                        border-color: black; background:rgb(161, 144, 252)">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <b>Nocturna </b><input id="ch_noct" name="ch_noct" title="Marque para mostrar."
+                                            type="checkbox" %CH_NOCT%>
+                                        <input type="hidden" name="hch_noct" value="false" id="hch_noct">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Provincia
+                                    </td>
+                                    <td><input style="color:yellow" name="num25" value="%NUM25%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ciudad
+                                    </td>
+                                    <td><input style="color:yellow" name="num26" value="%NUM26%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Córdoba
+                                    </td>
+                                    <td><input style="color:skyblue" name="num27" value="%NUM27%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Santa Fé
+                                    </td>
+                                    <td><input style="color:skyblue" name="num28" value="%NUM28%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Entre Ríos
+                                    </td>
+                                    <td><input style="color:green" name="num29" value="%NUM29%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Montevideo
+                                    </td>
+                                    <td><input style="color:green" name="num30" value="%NUM30%" size="3" type="text"
+                                            required pattern="[0-9-]{4}" maxlength="4"
+                                            title="Solo 4 Números o Guiones(-)" inputmode="numeric">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <!-- boton actualizar -->
+                <td colspan="2"><br>
+                    <input value="Actualizar" class="button" type="submit">
+                </td>
+                </tr>
+                <tr> <td colspan="2" style="color:red; font-size: 12px;">
+                    %ACTUALIZA%
+                    </td>
+                </tr>
+                <tr>
+                    <table cellspacing="1" cellpadding="5" style="border-width: 1px; border-style: dashed;
+                    border-color: white; background:black; color:red; font-size: 14px;">
+                        <tr>
+                            <td colspan="1" style="border-width: 1px; border-style: dashed;
+                            border-color: white; background:black; color:red; font-size: 12px;">
+                                Tiempo<br>Jugada
+                            </td>
+                            <td colspan="2" style="border-width: 1px; border-style: dashed;
+                            border-color: white; background:black; color:red; font-size: 12px;">
+                                <input name="tiempojug" value="%TIEMPOJUG%" min="10" max="40" step="5" type="range">
+                                <br>10 - - Segundos - - 40
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" style="border-width: 1px; border-style: dashed;
+                            border-color: white; background:black; color:red; font-size: 12px;">
+                                Velocidad <br>Texto
+                            </td>
+                            <td colspan="2" style="border-width: 1px; border-style: dashed;
+                            border-color: white; background:black; color:red; font-size: 12px;">
+                                <input name="velocidad" value="%VELOCIDAD%" min="1" max="10" step="1" type="range">
+                                <br>Rápido - - - - - - - Lento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" style="border-width: 1px; border-style: dashed;
+                            border-color: white; background:black; color:red; font-size: 12px;">
+                                Brillo
+                            </td>
+                            <td colspan="2" style="border-width: 1px; border-style: dashed;
+                                border-color: white; background:black; color:red; font-size: 12px;">
+                                <input name="britexto" value="%BRITEXTO%" min="2" max="10" step="2" type="range">
+                                <br>Opaco - - - - - Brilloso<br>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
