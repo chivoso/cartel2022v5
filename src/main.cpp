@@ -25,7 +25,9 @@
 #include <addons/TokenHelper.h>
 #include <addons/RTDBHelper.h>
 
+
 #include "config.h" // variables y conf generales
+#include "config_local.h"// variables y conf locales
 
 //// Define objetos ticker
 Ticker tck_parpadeo;
