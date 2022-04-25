@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <script type='text/javascript'>
+    if (window.history.replaceState) { // verificamos disponibilidad
+        window.history.replaceState(null, null, window.location.href);
+    }
     function validar() {
         if (document.getElementById("ch_prev").checked) {
             document.getElementById("hch_prev").value = true;
@@ -398,8 +401,9 @@
                     <input value="Enviar->" class="button" type="submit">
                 </td>
                 </tr>
-                <tr> <td colspan="2" style="color:red; font-size: 12px;">
-                    %ACTUALIZA%
+                <tr>
+                    <td colspan="2" style="color:red; font-size: 10px;">
+                        %ACTUALIZA%
                     </td>
                 </tr>
                 <tr>
