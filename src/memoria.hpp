@@ -32,7 +32,7 @@ boolean f_si_firebase()
 void imprimeEprom()
 {
   Serial.println(".");
-  Serial.println("Contenido de la memoria.");
+  Serial.print("\n ---------------------Funcion: imprimeEprom()");
   Serial.println(".");
   Serial.print("--sonido: ");
   Serial.print(f_sonido ? "ON" : "OFF");
