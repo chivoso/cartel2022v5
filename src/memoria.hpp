@@ -1,5 +1,32 @@
-
-
+//////////////////////////////////////////////////////////////////////
+// si hay cambios para subir a firebase
+boolean f_si_firebase()
+{
+  byte cambios = 0;
+  Serial.println("\n\tVerifica si graba Firebase");
+  for (u_int8_t t = 0; t < 5; t++) // verifica si cambiaron
+  {
+    if (f_most_Jug_PGN[t] != f_most_Jug[t])
+      cambios++;
+    for (u_int8_t l = 0; l < 6; l++)
+    {
+      if (mi_n_salido_PGN[l + t * 6].numero != mi_n_salido[l + t * 6].numero)
+        cambios++;
+      if (mi_n_salido_PGN[l + t * 6].f_mostrar != mi_n_salido[l + t * 6].f_mostrar)
+        cambios++;
+    }
+  }
+  for (u_int8_t t = 0; t < 5; t++) // carga en el temporal para la proxima
+  {
+    f_most_Jug_PGN[t] = f_most_Jug[t];
+    for (u_int8_t l = 0; l < 6; l++)
+    {
+      mi_n_salido_PGN[l + t * 6].numero = mi_n_salido[l + t * 6].numero;
+      mi_n_salido_PGN[l + t * 6].f_mostrar = mi_n_salido[l + t * 6].f_mostrar;
+    }
+  }
+  return cambios>0;
+}
 //////////////////////////////////////////////////////////////////////
 // Imprime el contenido la memoria
 void imprimeEprom()
@@ -105,8 +132,17 @@ boolean ver_actual_FB()
 // Graba verif leidos
 void graba_veri_leidos()
 {
-uint8_t errores = 0;
+  uint8_t errores = 0;
   Serial.printf("\n Leido por: %s= %i", AGENCIA.c_str(), Firebase.RTDB.setDoubleAsync(&obj_fbdo_FB, path + "Leido por " + AGENCIA, actualizacion) ? actualizacion : errores++);
+  // Serial.printf("\nHora de leido: %s\n", Firebase.RTDB.setTimestampAsync(&obj_fbdo_FB, path + "Hora de leido: ") ? "ok" : obj_fbdo_FB.errorReason().c_str());
+  // if (obj_fbdo_FB.httpCode() == FIREBASE_ERROR_HTTP_CODE_OK)
+  // {
+  //   // In setTimestampAsync, the following timestamp will be 0 because the response payload was ignored for all async functions.
+  //   // Timestamp saved in millisecond, get its seconds from int value
+  //   Serial.print("TIMESTAMP (Seconds): ");
+  //   time_t hora=obj_fbdo_FB.to<uint64_t>();
+  //   Serial.println(time(&hora));
+  // }
 }
 //////////////////////////////////////////////////////////////////////
 // Graba los numeros en firebase
@@ -191,8 +227,11 @@ void grabarEprom()
     Obj_Digito.setIntensity(x, brillo_textos + 5); // Setea brillo (0-15)
   Serial.println("Memoria Grabada");
   imprimeEprom();
-  f_grabar_firebase = true;
-  error_firebase = 1;
+  if (f_si_firebase())
+  {
+    f_grabar_firebase = true;
+    error_firebase = 1;
+  }
 }
 
 //////////////////////////////////////////////////////////////////////
