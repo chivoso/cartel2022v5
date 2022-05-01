@@ -154,7 +154,8 @@ void setup()
   Serial.println("Servidor iniciado.");
 
   // imp_Pant_Efecto("  ...Arranque OK", 0, 1000);
-  mostrar_Ip();
+  //mostrar_Ip();
+  imp_Pant_Efecto("  ...Arranque OK");
   Serial.println("  ...Arranque OK");
 
   ////Ticker cambioJugada

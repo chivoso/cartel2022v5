@@ -3,7 +3,7 @@
 boolean f_si_firebase()
 {
   byte cambios = 0;
-  Serial.println("\n\tVerifica si graba Firebase");
+  Serial.print("\n ---------------------Funcion: f_si_firebase()");
   for (u_int8_t t = 0; t < 5; t++) // verifica si cambiaron
   {
     if (f_most_Jug_PGN[t] != f_most_Jug[t])
