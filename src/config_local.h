@@ -3,6 +3,6 @@
 // Configuraciones Para solo este cartel
 //////////////////////////////////////////////////
 
-String AGENCIA= "CASA";           // quien es el actualizador: CASA, GANADORA, 5ESQUINAS, PILARES, COLORADA, CHAPULIN
+String AGENCIA= "GANADORA";           // quien es el actualizador: CASA, GANADORA, 5ESQUINAS, PILARES, COLORADA, CHAPULIN
 
 

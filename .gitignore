@@ -1,5 +1,5 @@
 
-src/config_local.h
+
 .vscode/
 
 
@@ -85,3 +85,4 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+src/config_local.h
